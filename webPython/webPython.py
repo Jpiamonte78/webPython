@@ -3,6 +3,8 @@
 import reflex as rx
 
 from rxconfig import config
+from webPython.components.navbar import navbar
+from webPython.views.header.header import header
 
 
 class State(rx.State):
@@ -12,8 +14,11 @@ class State(rx.State):
 
 
 def index() -> rx.Component:
-    # Welcome Page (Index)
-    return rx.text("Hola Mundo!!",color="blue")
+    return rx.vstack(
+            navbar(),
+            header(),
+            width="100%"    
+        )
    
 
 app = rx.App()
