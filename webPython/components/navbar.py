@@ -5,6 +5,8 @@ def navbar() ->rx.Component:
         rx.text("JimmyDev",height="40px"),
         position="sticky",
         bg="blue",
-        padding="16px",
+        padding_x="16px",
+        padding_y="16px",
         z_index = "999"
+        
     )
