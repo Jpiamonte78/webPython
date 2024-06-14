@@ -1,12 +1,14 @@
 import reflex as rx
+import webPython.styles.style as styles
 
 def navbar() ->rx.Component:
     return rx.hstack(
-        rx.text("JimmyDev",height="40px"),
+        rx.text("JimmyDev"),
         position="sticky",
-        bg="blue",
-        padding_x="16px",
-        padding_y="16px",
-        z_index = "999"
+        bg="lightblue",
+        padding_x=styles.Spacer.DEFAULT,
+        padding_y=styles.Spacer.SMALL,
+        z_index = "999",
+        top = "0"
         
     )

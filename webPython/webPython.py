@@ -1,7 +1,7 @@
 """Welcome to Reflex! This file outlines the steps to create a basic app."""
 
 import reflex as rx
-
+import webPython.styles.style as styles
 from rxconfig import config
 from webPython.components.navbar import navbar
 from webPython.views.header.header import header
@@ -21,9 +21,9 @@ def index() -> rx.Component:
             rx.vstack(
                 header(),
                 links(),
-                max_width="600px",
+                max_width=styles.MAX_WIDTH,
                 width = "100%",
-                margin_y="30px"
+                margin_y=styles.Spacer.BIG
             )
         ),
         footer()
@@ -32,5 +32,8 @@ def index() -> rx.Component:
     
    
 
-app = rx.App()
+app = rx.App(
+    style=styles.BASE_STYLE
+)
 app.add_page(index)
+
