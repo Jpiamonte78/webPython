@@ -10,5 +10,4 @@ def navbar() ->rx.Component:
         padding_y=styles.Spacer.SMALL,
         z_index = "999",
         top = "0"
-        
     )
