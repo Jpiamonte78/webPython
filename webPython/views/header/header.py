@@ -1,5 +1,7 @@
 import reflex as rx 
 import webPython.components.link_icon as link_icon
+import webPython.styles.style as style
+from webPython.styles.colors import TextColor as TextColor
 
 
 
@@ -11,11 +13,18 @@ def header() -> rx.Component:
                 rx.vstack(
                     rx.text("@jpiamontedev"),
                     rx.text("Hola Mi nombre es Jimmy Piamonte"),
-                    link_icon.link_icon()
+                    rx.hstack(
+                        link_icon.link_icon("https://www.facebook.com/jimmy.j.piamonte"),
+                        link_icon.link_icon("https://www.instagram.com/jpiamonte"),
+                        link_icon.link_icon("https://www.youtube.com/channel/UC2iKwxe6Aqgc49k5AXTig9A")
+                    )
+                    
                 )
             ),
             rx.text("""Soy Ingeniero de Sistemas, esta es mi primera web
-                    desarrollada con Python""")
+                    desarrollada con Python""",
+                    color=TextColor.BODY.value),
+            spacing="7"
         )
     )
         
