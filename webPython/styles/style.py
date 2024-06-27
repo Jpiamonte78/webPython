@@ -40,10 +40,12 @@ title_style=dict(
     padding_top = Spacer.DEFAULT.value
 )
 button_title_style=dict(
-    font_size = Spacer.DEFAULT.value
+    font_size = Spacer.DEFAULT.value,
+    Color = TextColor.HEADER.value
 )
 
 button_body_style = dict(
-    font_size = Spacer.MEDIUM.value
+    font_size = Spacer.MEDIUM.value,
+    color = TextColor.BODY.value
 )
 

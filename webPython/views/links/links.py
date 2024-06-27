@@ -1,6 +1,8 @@
 import reflex as rx
 from webPython.components.link_button import link_button
 from webPython.components.title import title
+from webPython.styles.colors import TextColor as TextColor
+
 def links() ->rx.Component:
     return rx.vstack(
         title("Portafolio"),

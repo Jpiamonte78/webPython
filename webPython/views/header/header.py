@@ -11,8 +11,8 @@ def header() -> rx.Component:
             rx.hstack(
                 rx.avatar(fallback = "JP", size = "7", radius = "full"),
                 rx.vstack(
-                    rx.text("@jpiamontedev"),
-                    rx.text("Hola Mi nombre es Jimmy Piamonte"),
+                    rx.text("@jpiamontedev",color=TextColor.HEADER.value),
+                    rx.text("Hola Mi nombre es Jimmy Piamonte",color=TextColor.BODY.value),
                     rx.hstack(
                         link_icon.link_icon("https://www.facebook.com/jimmy.j.piamonte"),
                         link_icon.link_icon("https://www.instagram.com/jpiamonte"),

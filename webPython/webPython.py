@@ -8,10 +8,10 @@ from webPython.views.header.header import header
 from webPython.views.links.links import links
 from webPython.components.footer import footer
 
-class State(rx.State):
-    """The app state."""
+#class State(rx.State):
+#    """The app state."""
 
-    ...
+#    ...
 
 
 def index() -> rx.Component:
